@@ -37,9 +37,12 @@ $c-social: (
 
 /// mixin pour passer un élément en noir & blanc, avec animation
 /// @example
-///   &:hover {
-///      @include ungreify();
+///   .last-project__item__bg {
+///     @include breakpoint($b-desk){
+///       @include greify();
+///     }
 ///   }
+
 @mixin greify() {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -51,10 +54,8 @@ $c-social: (
 
 /// mixin le repasser en couleur
 /// @example
-///   .last-project__item__bg {
-///     @include breakpoint($b-desk){
-///       @include greify();
-///     }
+///   &:hover {
+///      @include ungreify();
 ///   }
 @mixin ungreify() {
   -webkit-filter: grayscale(0%);
