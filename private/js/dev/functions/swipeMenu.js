@@ -6,7 +6,8 @@ import {overlayOff, overlayOn} from '../functions/overlay.js';
 
 
 export default function(){
-  const mc = new Hammer(document.querySelector('body'));
+  delete Hammer.defaults.cssProps.userSelect;
+  const mc = new Hammer(document.querySelector('body'));  
   const open = function(){
     activate('.menu--link');
     $('body').addClass('swiperight');
