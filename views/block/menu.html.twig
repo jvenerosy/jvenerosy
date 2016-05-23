@@ -1,0 +1,16 @@
+{% import "macros/menu-item.html.twig" as menuItem %}
+<div id="menu">
+    <div class="menu__in">
+        <a href="#" class="menu__in-close">
+            <svg class="svg">
+                <use xlink:href="img/svg.svg#icon-cross"></use>
+            </svg>
+        </a>
+        <ul class="menu__in-nav">
+            {{ menuItem.getItem("Home", "home", "/", "Retour à l'accueil") }}
+            {{ menuItem.getItem("Portfolio", "profile", "/portfolio", "Mes projets") }}
+            {{ menuItem.getItem("CV", "book", "/cv", "Curriculum Vitae") }}
+        </ul>
+        {% include "block/social.html.twig" %}
+    </div>
+</div>

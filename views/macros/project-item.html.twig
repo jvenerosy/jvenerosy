@@ -1,0 +1,11 @@
+{% macro getProject(title, texte, mea, link) %}
+  <div class="project__item">
+      <div class="project__item-container">
+          <div class="project__item-bg" data-mea="{{mea}}"></div>
+          <div class="project__item-deploy">
+              <h3 class="project__item-deploy-title"><a href="{{link}}">{{title}}</a></h3>
+              <p class="project__item-deploy-parag"><a href="{{link}}">{{texte}}</a></p>
+          </div>
+      </div>
+  </div>
+{% endmacro %}

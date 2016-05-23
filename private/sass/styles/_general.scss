@@ -1,0 +1,41 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $t-size-base;
+  font-family: sans-serif;
+  color: $c-theme-txt;
+  background: $c-theme-1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  display: block;
+  width: 70%;
+  height: 1px;
+  background: $c-theme-txt-2;
+  margin: 30px auto;
+  clear: both;
+}
+
+%space-around {
+  margin-left: $d-margin-block;
+  margin-right: $d-margin-block;
+
+  @include breakpoint($b-tab) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint($b-desk) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

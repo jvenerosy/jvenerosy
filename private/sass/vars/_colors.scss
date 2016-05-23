@@ -1,0 +1,66 @@
+////
+/// @group Couleurs
+////
+
+/// couleur thème #1
+$c-theme-1: #fff;
+
+/// couleur thème #2
+$c-theme-2: #000;
+
+/// couleur texte
+$c-theme-txt: #555;
+
+/// couleur texte contraste
+$c-theme-txt-2: #eee;
+
+/// couleur liens
+$c-theme-link: #000;
+
+/// couleur ombre
+$c-shadow: #888;
+
+/// couleurs de réseaux sociaux pour utilisation dans un @each
+/// @example
+///   @each $social, $color in $c-social{
+///     &--#{$social}{
+///       @include transition-link($color);
+///     }
+///   }
+$c-social: (
+        github #000,
+        bitbucket #205081,
+        codepen #333,
+        twitter #55acee,
+        mail #db4437
+);
+
+/// mixin pour passer un élément en noir & blanc, avec animation
+/// @example
+///   &:hover {
+///      @include ungreify();
+///   }
+@mixin greify() {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+/// mixin le repasser en couleur
+/// @example
+///   .last-project__item__bg {
+///     @include breakpoint($b-desk){
+///       @include greify();
+///     }
+///   }
+@mixin ungreify() {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: gray;
+}

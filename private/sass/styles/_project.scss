@@ -1,0 +1,87 @@
+.project {
+  margin-top: $d-margin-block;
+  @extend %space-around;
+}
+
+.project__wrapper {
+  @include container();
+}
+
+.project__title {
+  margin: $d-margin-block;
+}
+
+.project__item {
+  margin-bottom: $d-margin-block;
+
+  @include breakpoint($b-tab) {
+    @include span(1 of 2);
+  }
+
+  @include breakpoint($b-desk) {
+    @include span(1 of 3);
+    &:nth-child(3n+1) {
+      padding-left: 0;
+    }
+    &:nth-child(3n+3) {
+      padding-right: 0;
+    }
+  }
+  &:hover {
+    .project__item-bg {
+      @include ungreify();
+    }
+    .project__item-deploy-parag {
+      max-height: 300px;
+      margin-top: $d-margin-block;
+    }
+  }
+}
+
+.project__item-container {
+  padding: $d-margin-block;
+  align-items: center;
+  color: $c-theme-txt-2;
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.project__item-bg {
+  @extend %transition;
+  
+  @include breakpoint($b-desk) {
+    @include greify();
+  }
+}
+
+.project__item-deploy {
+  width: 100%;
+  padding: $d-margin-block;
+  background: rgba(white, 0.7);
+  position: relative;
+  z-index: 2;
+  color: #000;
+}
+
+.project__item-deploy-title {
+  margin: 0;
+  @include fonts(20, 1);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.project__item-deploy-parag {
+  height: auto;
+  max-height: 300px;
+  overflow: hidden;
+  margin-top: $d-margin-block;
+  @extend %transition;
+
+  @include fonts(16, 1.5);
+  @include breakpoint($b-desk) {
+    max-height: 0;
+    margin: 0;
+  }
+}

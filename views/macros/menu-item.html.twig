@@ -1,0 +1,10 @@
+{% macro getItem(name, icon, link, title) %}
+    <li>
+        <a href="{{ link }}" class="menu__in-nav-item menu__in-nav-item--appear" title="{{ title }}">
+            <svg class="svg">
+                <use xlink:href="img/svg.svg#icon-{{ icon }}"></use>
+            </svg>
+            {{ name }}
+        </a>
+    </li>
+{% endmacro %}

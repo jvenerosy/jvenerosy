@@ -1,0 +1,17 @@
+.backgroundify {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.backgroundify--solid {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

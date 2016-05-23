@@ -1,0 +1,89 @@
+.s-edito {
+
+  p {
+    @include fonts(16, 1.5);
+    margin: 1em 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $t-text;
+    line-height: 1.6em;
+
+    &:not(:last-child) {
+      margin: 0 0 .5em 0;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  ul {
+    @include fonts(1.5em, 1.5);
+  }
+
+}
+
+.t-h1,
+.t-h2,
+.t-h3,
+.t-h4,
+.t-h5 {
+  font-family: $t-text;
+  line-height: 1.6em;
+
+  &:not(:last-child) {
+    margin: 0 0 .5em 0;
+  }
+}
+
+.t-h1 {
+  font-size: 2rem;
+}
+
+.t-h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.t-h3 {
+  font-size: 1.5rem;
+}
+
+.t-h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.t-h5 {
+  font-size: 1rem;
+}
+
+.s-section {
+  margin-top: $d-margin-block;
+}

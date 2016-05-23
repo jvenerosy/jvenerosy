@@ -1,0 +1,67 @@
+.cv {
+  @extend %space-around;
+}
+
+.cv__photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto;
+}
+
+.cv__presentation {
+  @include fonts(18, 1.5);
+  text-align: center;
+
+  span {
+    display: block;
+  }
+}
+
+.cv__categorie {
+  @include fonts(16, 2);
+  font-weight: bold;
+  border-bottom: 1px solid $c-theme-txt-2;
+  margin: 20px 0;
+
+  @include breakpoint($b-desk) {
+    @include fonts(25, 2);
+    font-weight: normal;
+  }
+}
+
+.cv__cont {
+  @include container();
+  @include fonts(14, 1.5);
+  margin: 20px 0;
+}
+
+.cv__intitule {
+  font-weight: bold;
+
+  @include breakpoint($b-desk) {
+    @include span(2 of 8);
+    font-weight: normal;
+  }
+}
+
+.cv__details {
+  color: $c-theme-txt;
+
+  @include breakpoint($b-desk) {
+    @include span(6 of 8);
+  }
+
+  strong {
+    display: block;
+    font-weight: normal;
+    margin: 10px 0;
+
+    @include breakpoint($b-desk) {
+      @include fonts(16, 1);
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.main-footer {
+  margin-top: $d-margin-block;
+  text-align: center;
+  padding: $d-margin-block 0;
+  @include fonts(14, 1);
+}

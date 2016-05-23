@@ -1,0 +1,46 @@
+////
+/// @group transition
+////
+
+/// durée de transition par défaut
+$transition-duration: .5s;
+
+/// transition par défaut
+%transition {
+  transition: all ease $transition-duration;
+}
+
+/// transition animée de couleur au hover, valeur par défaut $c-theme-link
+/// @param {variable|hexa|rgb|rgba} couleur
+/// @example
+///   @include transition-link(#0DB0CE);
+@mixin transition-link($color:$c-theme-link) {
+  @extend %transition;
+  &:hover {
+    color: $color;
+  }
+}
+
+/// transition animée rotative au hover, renseigner un nombre de tours désirés
+/// @param {number} nombre
+/// @example
+///   @include rotate(3);
+@mixin rotate($number) {
+  transform: rotate(360*$number+deg);
+}
+
+/// transition animée sur le background au hover, $c-theme-1 par défaut
+/// @param {variable|hexa|rgb|rgba} couleur
+/// @example
+///   @include bg-hover($c-theme-2);
+@mixin bg-hover($color:$c-theme-1) {
+  @extend %transition;
+  &:hover {
+    background: $color;
+  }
+}
+
+/// Effet ombre sur les blocs
+@mixin box-shadow() {
+  box-shadow: 0 0 10px $c-shadow;
+}

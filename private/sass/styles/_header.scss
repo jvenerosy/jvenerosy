@@ -1,0 +1,30 @@
+/// hauteur du header
+/// @group dimensions
+$d-header: 70px;
+
+body {
+  padding-top: $d-header;
+}
+
+.main-header {
+  -webkit-transform: translateZ(0);
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  height: $d-header;
+  line-height: $d-header;
+  background: $c-theme-1;
+  color: $c-theme-txt;
+  text-align: center;
+  opacity: 1;
+  @include box-shadow;
+
+  &__title {
+    @include fonts(45, $d-header);
+    vertical-align: middle;
+    height: $d-header;
+  }
+}

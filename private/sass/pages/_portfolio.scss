@@ -1,0 +1,16 @@
+.portfolio__filter {
+  @include container();
+}
+
+.portfolio__filter-item {
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.portfolio__filter-list {
+}

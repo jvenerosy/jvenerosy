@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    {% include "layout/meta.html.twig" %}
+    <title>Jvenerosy {%  block siteTitle %}{% endblock %}</title>
+</head>
+<body>
+<!--HEADER-->
+{% include "block/header.html.twig" %}
+<!--/HEADER-->
+
+<!--MENU-->
+{% include "block/menu.html.twig" %}
+<!--/MENU-->
+
+<!--MAIN-->
+{%  block mainContent %}
+
+{% endblock %}
+<!--/MAIN-->
+
+<!--FOOTER-->
+{% include "block/footer.html.twig" %}
+<!--/FOOTER-->
+
+{% include "layout/script.html.twig" %}
+</body>
+</html>

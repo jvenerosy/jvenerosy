@@ -1,0 +1,47 @@
+{% extends "template/base.html.twig" %}
+{% set page = 'home' %}
+{% block siteTitle %}Bienvenue{% endblock %}
+
+{% block mainContent %}
+<div class="presentation__mea" data-mea="img/mea/home.jpg" data-absolute="false"></div>
+<div class="presentation">
+	<div class="s-edito presentation__txt">
+		<h2 class="t-h2">jvenerosy</h2>
+		<p>Passioné de nouvelles technologies et de design c'est tout naturellement que je m'oriente dans le graphisme web en 2006. De nature curieuse, je m'intérresse alors de plus en plus à la programmation et décide en 2009 de devenir intégrateur Front-end.</p>
+		<p>J'ai depuis multiplié les experiences, tout d'abord en agence, puis annonceur, et finalement en Freelance depuis fin 2014. Étant passé par le graphisme, j'apporte une énorme importance à l'expérience utilisateur, l'accessibilité et la qualité de mes productions</p>
+		<p>Je m'interresse également à la photographie, aux voyages, au sports (mécaniques et physiques), ainsi qu'au cinéma.</p>
+		<a href="/cv" class="t-h4 home__title  home__title--link">
+			<svg class="svg">
+				<use xlink:href="img/svg.svg#icon-book"></use>
+			</svg>
+			Voir mon CV
+		</a>
+	</div>
+	<div class="s-edito presentation__txt--skill">
+		<h2 class="t-h2">Compétences :</h2>
+		<ul>
+			<li data-note="5">HTML5</li>
+			<li data-note="5">CSS3</li>
+			<li data-note="5">Preprocesseurs (Sass, Less)</li>
+			<li data-note="3">JS</li>
+			<li data-note="3">Templating (Wordpress, Twig)</li>
+			<li data-note="4">Gulp, Grunt</li>
+		</ul>
+	</div>
+	</ul>
+</div>
+
+<div class="project">
+	<h2 class="t-h2">Derniers projets</h2>
+	<div class="project__wrapper">
+		{% include "block/project.html.twig" %}
+	</div>
+	<a href="/portfolio" class="t-h4 home__title  home__title--link">
+		<svg class="svg">
+			<use xlink:href="img/svg.svg#icon-profile"></use>
+		</svg>
+		Voir plus de projets
+	</a>
+</div>
+{% include "block/social.html.twig" %}
+{% endblock %}

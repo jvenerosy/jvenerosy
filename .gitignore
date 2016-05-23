@@ -1,0 +1,17 @@
+/.idea
+
+/.sass-cache
+
+/node_modules
+
+/_design
+
+/documentation
+
+/js/functions/
+
+/img/svg.svg
+
+*.css
+
+public/*
