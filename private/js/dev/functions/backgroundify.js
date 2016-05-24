@@ -1,11 +1,6 @@
 import $ from 'jquery';
-import Blazy from 'blazy';
 
 export default function(element){
-
-    let bLazy = new Blazy({
-      offset: 5
-    });
 
     $(element).each(function(){
       const img = $(this).data('src');
