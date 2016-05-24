@@ -7,7 +7,6 @@ author:  JVenerosy
 - [Node.js](https://nodejs.org/en/)
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 
-
 ## Install
 
 - `npm install`
@@ -15,21 +14,9 @@ author:  JVenerosy
 
 ## Run
 
-- `gulp`
+- `gulp` or `gulp open`
 
 
 ## Description : ##
 
-Simple tool for starting website
-
-
-#### Utils
-
-- Sass
-- Susy
-- Gulp
-    - Watcher
-    - CssComb
-    - LiveReload
-    - Grid svg
-    - SassDoc
+Portfolio de Jvenerosy, intégrateur front-end.
