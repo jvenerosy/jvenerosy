@@ -10,7 +10,7 @@ $(function() {
   activable('[data-activable]');
 
   //activate backgroundify
-  backgroundify('[data-mea]');
+  backgroundify('[data-src]');
 
   //swipe on menu
   swipeMenu();

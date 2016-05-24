@@ -1,9 +1,12 @@
 import $ from 'jquery';
+import Blazy from 'blazy';
 
 export default function(element){
 
+    let bLazy = new Blazy();
+
     $(element).each(function(){
-      const img = $(this).data('mea');
+      const img = $(this).data('src');
       const absolute = $(this).data('absolute');
 
       $(this).css({
@@ -17,4 +20,5 @@ export default function(element){
         $(this).addClass('backgroundify');
       }
     })
+
 }
