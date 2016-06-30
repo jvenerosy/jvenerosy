@@ -1,9 +1,9 @@
-{% extends "template/base.html.twig" %}
+{% extends "template/fr/base.html.twig" %}
 {% set page = 'home' %}
 {% block siteTitle %}Bienvenue{% endblock %}
 
 {% block mainContent %}
-<div class="presentation__mea b-lazy bgify" data-src="img/mea/home.jpg" data-absolute="false"></div>
+<div class="presentation__mea b-lazy bgify" data-src="static/img/mea/home.jpg" data-absolute="false"></div>
 <div class="presentation">
 	<div class="s-edito presentation__txt">
 		<h2 class="t-h2">jvenerosy</h2>
@@ -12,7 +12,7 @@
 		<p>Je m'interresse également à la photographie, aux voyages, aux sports (mécaniques et physiques), ainsi qu'au cinéma.</p>
 		<a href="/cv" class="t-h4 home__title  home__title--link">
 			<svg class="svg">
-				<use xlink:href="img/svg.svg#icon-book"></use>
+				<use xlink:href="/static/img/svg.svg#icon-book"></use>
 			</svg>
 			Voir mon CV
 		</a>
@@ -34,14 +34,14 @@
 <div class="project">
 	<h2 class="t-h2">Derniers projets</h2>
 	<div class="project__wrapper">
-		{% include "block/project.html.twig" %}
+		{% include "block/fr/project.html.twig" %}
 	</div>
 	<a href="/portfolio" class="t-h4 home__title  home__title--link">
 		<svg class="svg">
-			<use xlink:href="img/svg.svg#icon-profile"></use>
+			<use xlink:href="/static/img/svg.svg#icon-profile"></use>
 		</svg>
 		Voir plus de projets
 	</a>
 </div>
-{% include "block/social.html.twig" %}
+{% include "block/fr/social.html.twig" %}
 {% endblock %}

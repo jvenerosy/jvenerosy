@@ -1,4 +1,4 @@
-{% extends "template/base.html.twig" %}
+{% extends "template/fr/base.html.twig" %}
 {% import "macros/cv-item.html.twig" as CVItem %}
 {% block siteTitle %}Curriculum Vitae{% endblock %}
 {% set year = "now"|date("Y") %}
@@ -6,7 +6,7 @@
 {% block mainContent %}
 
 <div class="cv">
-  <img class="cv__photo b-lazy" data-src="/img/cv.jpg" alt="" />
+  <img class="cv__photo b-lazy" data-src="static/img/cv.jpg" alt="" />
   <p class="cv__presentation">
     <span>Julien VENEROSY</span>
     <span>29 ans</span>

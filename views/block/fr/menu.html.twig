@@ -3,7 +3,7 @@
     <div class="menu__in">
         <a href="#" class="menu__in-close">
             <svg class="svg">
-                <use xlink:href="img/svg.svg#icon-cross"></use>
+                <use xlink:href="/static/img/svg.svg#icon-cross"></use>
             </svg>
         </a>
         <ul class="menu__in-nav">
@@ -11,6 +11,6 @@
             {{ menuItem.getItem("Portfolio", "profile", "/portfolio", "Mes projets") }}
             {{ menuItem.getItem("CV", "book", "/cv", "Curriculum Vitae") }}
         </ul>
-        {% include "block/social.html.twig" %}
+        {% include "block/fr/social.html.twig" %}
     </div>
 </div>

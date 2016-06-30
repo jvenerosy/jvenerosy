@@ -1,0 +1,47 @@
+{% extends "template/en/base.html.twig" %}
+{% set page = 'home' %}
+{% block siteTitle %}Welcome{% endblock %}
+
+{% block mainContent %}
+<div class="presentation__mea b-lazy bgify" data-src="/static/img/mea/home.jpg" data-absolute="false"></div>
+<div class="presentation">
+	<div class="s-edito presentation__txt">
+		<h2 class="t-h2">jvenerosy</h2>
+		<p>Passionate about new technologies and design. I'm naturally oriented in webdesign since 2006. Beside, I'm interested in programming and decided to be a Front End Integrator.</p>
+		<p>Thus, I have developped many experiences, first in angency, then as a freelance since 2014. Having passed by webdesign, I am devoted to user experience, accessibility and my production's quality.</p>
+		<p>I'm also interrested in photography, traveling, sports, and movie.</p>
+		<a href="/cv" class="t-h4 home__title  home__title--link">
+			<svg class="svg">
+				<use xlink:href="/static/img/svg.svg#icon-book"></use>
+			</svg>
+			See my resume
+		</a>
+	</div>
+	<div class="s-edito presentation__txt--skill">
+		<h2 class="t-h2">Skills :</h2>
+		<ul>
+			<li data-note="5">HTML5</li>
+			<li data-note="5">CSS3</li>
+			<li data-note="5">Pre-processor (Sass, Less)</li>
+			<li data-note="3">JS</li>
+			<li data-note="3">Templating (Wordpress, Twig)</li>
+			<li data-note="4">Gulp, Grunt</li>
+		</ul>
+	</div>
+	</ul>
+</div>
+
+<div class="project">
+	<h2 class="t-h2">Last projects</h2>
+	<div class="project__wrapper">
+		{% include "block/en/project.html.twig" %}
+	</div>
+	<a href="/portfolio" class="t-h4 home__title  home__title--link">
+		<svg class="svg">
+			<use xlink:href="/static/img/svg.svg#icon-profile"></use>
+		</svg>
+		See more projects
+	</a>
+</div>
+{% include "block/en/social.html.twig" %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "template/fr/base.html.twig" %}
+{% block siteTitle %}Portfolio{% endblock %}
+
+{% block mainContent %}
+<div class="presentation__mea b-lazy bgify" data-src="/static/img/mea/desktop.jpg" data-absolute="false"></div>
+<div class="portfolio">
+	<div class="project">
+		<h2 class="t-h2">Mes derniers projets</h2>
+		<section class="s-section">
+			<div class="project__wrapper">
+				{% include "block/fr/project.html.twig" %}
+			</div>
+		</section>
+		<div class="s-edito">
+			<div class="portfolio__filter">
+				<div class="portfolio__filter-item">
+					<h4 class="t-h4">Domaines de compétences utilisés pour ces différents projets</h4>
+					<ul class="portfolio__filter-list">
+						<li>Intégration front-end responsive</li>
+						<li>Respect des standards HTML5</li>
+						<li>Intégration d'emails statiques et responsives</li>
+						<li>Animations CSS3 et javascript</li>
+						<li>Intégration de template (Wordpress, Twig, Drupal...)</li>
+						<li>Bannières animées HTML5 (Adobe Animate Edge)</li>
+						<li>Versionning (Git, SVN, CVS)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

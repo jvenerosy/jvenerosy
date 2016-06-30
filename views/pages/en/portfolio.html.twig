@@ -1,14 +1,14 @@
-{% extends "template/base.html.twig" %}
+{% extends "template/en/base.html.twig" %}
 {% block siteTitle %}Portfolio{% endblock %}
 
 {% block mainContent %}
-<div class="presentation__mea b-lazy bgify" data-src="img/mea/desktop.jpg" data-absolute="false"></div>
+<div class="presentation__mea b-lazy bgify" data-src="/static/img/mea/desktop.jpg" data-absolute="false"></div>
 <div class="portfolio">
 	<div class="project">
 		<h2 class="t-h2">Mes derniers projets</h2>
 		<section class="s-section">
 			<div class="project__wrapper">
-				{% include "block/project.html.twig" %}
+				{% include "block/en/project.html.twig" %}
 			</div>
 		</section>
 		<div class="s-edito">
