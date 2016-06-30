@@ -17,4 +17,12 @@ app.get('/cv', function (req, res) {
     res.render('pages/cv.html.twig');
 });
 
+app.get('/resume', function (req, res) {
+    res.render('pages/cv-en.html.twig');
+});
+
+app.use(function(req, res, next) {
+  res.render('pages/404.html.twig');
+});
+
 app.listen(port);
