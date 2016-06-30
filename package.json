@@ -50,5 +50,10 @@
     "twig": "^0.8.9",
     "webpack": "^1.12.14",
     "yargs": "^4.4.0"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "sass-loader": "^4.0.0",
+    "susy": "^2.2.12"
   }
 }
