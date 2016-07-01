@@ -62,6 +62,24 @@
   }
 }
 
+.menu__in-trad {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  margin-bottom: $d-margin-block;
+  padding: 10px;
+  text-align: center;
+
+  &-item {
+    display: inline-block;
+
+    img {
+      max-width: 25px;
+      margin: 0 10px;
+    }
+  }
+}
+
 .menu--link {
   display: block;
   position: fixed;
