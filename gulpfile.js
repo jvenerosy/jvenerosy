@@ -76,7 +76,7 @@ gulp.task('javascript', function () {
 //Images
 //minify
 gulp.task('image', function () {
-    gulp.src(['private/img/**/*.png', 'private/img/**/*.jpeg', 'private/img/**/*.jpg', 'private/img/**/*.gif'])
+    gulp.src(['private/img/**/*.png', 'private/img/**/*.jpeg', 'private/img/**/*.jpg', 'private/img/**/*.gif', 'private/img/**/*.pdf'])
         .pipe($.imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]

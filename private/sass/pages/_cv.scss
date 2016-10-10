@@ -65,3 +65,14 @@
     }
   }
 }
+
+.cv__download {
+  text-align: center;
+  display: block;
+  width: 200px;
+  padding: 10px 0;
+  margin: 20px auto;
+  font-size: rem(14px);
+  background: $c-theme-txt;
+  color: $c-theme-txt-2;
+}

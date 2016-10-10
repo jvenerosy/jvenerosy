@@ -44,6 +44,16 @@
   }
 }
 
+.menu__label {
+  font-size: rem(14px);
+  vertical-align: 3px;
+  display: none;
+
+  @include breakpoint($b-desk) {
+    display: inline;
+  }
+}
+
 .menu__in-nav {
   @include fonts(20, 1.5);
   text-transform: lowercase;
@@ -90,7 +100,4 @@
   text-transform: uppercase;
   @include fonts(25, 15px);
   @include transition-link($c-theme-link);
-  &:hover {
-    @include rotate(.5);
-  }
 }

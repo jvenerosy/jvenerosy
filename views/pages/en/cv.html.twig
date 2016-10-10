@@ -5,36 +5,42 @@
 
 {% block mainContent %}
 
-<div class="cv">
-  <img class="cv__photo b-lazy" data-src="/static/img/cv.jpg" alt="" />
-  <p class="cv__presentation">
-    <span>Julien VENEROSY</span>
-    <span>29 years old</span>
-    <span>{{ year - 2007 }} years of experience</span>
-    <span><strong>Front End Developer</strong></span>
-  </p>
+    <div class="cv">
+        <img class="cv__photo b-lazy" data-src="/static/img/cv.jpg" alt=""/>
+        <p class="cv__presentation">
+            <span>Julien VENEROSY</span>
+            <span>29 years old</span>
+            <span>{{ year - 2007 }} years of experience</span>
+            <span><strong>Front End Developer</strong></span>
+        </p>
 
-  <h2 class="cv__categorie">EDUCATION</h2>
-  {{ CVItem.getItem("2009 - 2010", "Pro Licence Webmaster (Integration, front & back development, webdesign, print)  / Institut BGS") }}
-  {{ CVItem.getItem("2006 - 2008", "DUT SRC Services and Communication's Network") }}
-  {{ CVItem.getItem("2006", "Baccalauréat Sciences and engeneer's technologies") }}
-  <h2 class="cv__categorie">TECHNICAL EXPERTISE</h2>
-  {{ CVItem.getItem("Environnements", "Windows, Mac, Linux") }}
-  {{ CVItem.getItem("Web development", "Responsive integration, HTML5, Email, CSS3, Sass, Compass, Javascript, jQuery, jQuery Mobile, Node.js, RequireJS, Grunt, Gulp") }}
-  {{ CVItem.getItem("Versioning", "Git, SVN, WinCVS") }}
-  {{ CVItem.getItem("CMS & Templating", "Jekyll, Twig, Wordpress, Spip, Prestashop, Drupal, Magento") }}
-  <h2 class="cv__categorie">WORK EXPERIENCE</h2>
-  {{ CVItem.getItem("Jan 2016 - Jun 2016", "<strong>Le Figaro</strong>Strengthening of the technical team of Figaro to integrate Sport24.fr - Templating Twig, Sass, Compass, JS.") }}
-  {{ CVItem.getItem("Oct 2015 - Jan 2016", "<strong>Groupe Alticemedias</strong>In the Front-End team, integration of the new design of l'Etudiant.fr - NodeJS for automatic tasks, HTML5, CSS3, Sass, Compass. Mobile-first integration, full responsive.  Integration of the new website newsletter (responsive).") }}
-  {{ CVItem.getItem("Jul 2015 - Aug 2015", "<strong>Showroomprive</strong>Integration of special offers pages and emails for Showroomprive. HTML5, CSS3 and jQuery. Grunt for automatic tests.") }}
-  {{ CVItem.getItem("Jan 2015 -Jul 2015", "<strong>AccorHotels</strong>Strengthening of the new technical team of AccorHotels, internalization of pages integration. Full autonomy on the technical choices to refound many pages : HTML5, CSS3, jQuery. WinCVS for versionning :'(") }}
-  {{ CVItem.getItem("May 2015", "<strong>AKQA</strong>Team strengthening for <a href=\"http://paristories.psg.fr/\">Paristories</a> release. HTML5, CSS3, jQuery and Gulp for automatic tasks.") }}
-  {{ CVItem.getItem("Sep 2014  - Jan 2015", "<strong>Bouygues Télécom</strong>Homepage integration for the new Bbox and special offers related to technical team. HTML5 & CSS3 integration, Sass and jQuery from Bouygues' specifications. Full autonomy on technical choices.") }}
-  {{ CVItem.getItem("Sep 2014", "<strong>Fédération Française de Tennis</strong>Static version of the new entry member. HTML5 & CSS3, Sass, jQuery. Full responsive integration. Using Grunt to automate tasks.") }}
-  {{ CVItem.getItem("Jul 2013 - Sep 2014", "<strong>Mégalo & Company</strong>Responsible for providing my expertise in the draft concept, I am also responsible for the integration of sites and emails various agency clients, full autonomy on technical choices for the different projects (Salomon Freeski, BMW & Vous, Foncia, Puiforcat, Leonard...)") }}
-  {{ CVItem.getItem("2009 à 2013", "<strong>NextInteractiveMedia</strong>Conversion trainership of one year to internship in technical team in charge of group' sites integration : 01Net, Télécharger.com, RMC, RMC Sport, RMC Découverte, BFM and BFM Business.") }}
-  {{ CVItem.getItem("2007 à 2009", "<strong>Fullsix</strong>Trainership of two years, rewarding and formative, both in terms of the skills of teamwork. Graphic design, Flash, Email creation and programing. Learning Photoshop, Flash (RIP), Illustrator, HTML and CSS") }}
-
-</div>
+        <h2 class="cv__categorie">EDUCATION</h2>
+        {{ CVItem.getItem("2009 - 2010", "Pro Licence Webmaster (Integration, front & back development, webdesign, print)  / Institut BGS") }}
+        {{ CVItem.getItem("2006 - 2008", "DUT SRC Services and Communication's Network") }}
+        {{ CVItem.getItem("2006", "Baccalauréat Sciences and engeneer's technologies") }}
+        <h2 class="cv__categorie">TECHNICAL EXPERTISE</h2>
+        {{ CVItem.getItem("Environnements", "Windows, Mac, Linux") }}
+        {{ CVItem.getItem("Web development", "Responsive integration, HTML5, Email, CSS3, Sass, Compass, Javascript, jQuery, jQuery Mobile, Node.js, RequireJS, Grunt, Gulp") }}
+        {{ CVItem.getItem("Versioning", "Git, SVN, WinCVS") }}
+        {{ CVItem.getItem("CMS & Templating", "Jekyll, Twig, Wordpress, Spip, Prestashop, Drupal, Magento") }}
+        <h2 class="cv__categorie">WORK EXPERIENCE</h2>
+        {{ CVItem.getItem("Aug 2016  - today", "<strong>Vente-privee.com</strong>In charge of web development / Marketing & Communication, my mission is to bring my expertise on mini-websites of vente-privee et an lead a front-end dev' team.") }}
+        {{ CVItem.getItem("Jan 2016 - Jun 2016", "<strong>Le Figaro</strong>Strengthening of the technical team of Figaro to integrate Sport24.fr - Templating Twig, Sass, Compass, JS.") }}
+        {{ CVItem.getItem("Oct 2015 - Jan 2016", "<strong>Groupe Alticemedias</strong>In the Front-End team, integration of the new design of l'Etudiant.fr - NodeJS for automatic tasks, HTML5, CSS3, Sass, Compass. Mobile-first integration, full responsive.  Integration of the new website newsletter (responsive).") }}
+        {{ CVItem.getItem("Jul 2015 - Aug 2015", "<strong>Showroomprive</strong>Integration of special offers pages and emails for Showroomprive. HTML5, CSS3 and jQuery. Grunt for automatic tests.") }}
+        {{ CVItem.getItem("Jan 2015 -Jul 2015", "<strong>AccorHotels</strong>Strengthening of the new technical team of AccorHotels, internalization of pages integration. Full autonomy on the technical choices to refound many pages : HTML5, CSS3, jQuery. WinCVS for versionning :'(") }}
+        {{ CVItem.getItem("May 2015", "<strong>AKQA</strong>Team strengthening for <a href=\"http://paristories.psg.fr/\">Paristories</a> release. HTML5, CSS3, jQuery and Gulp for automatic tasks.") }}
+        {{ CVItem.getItem("Sep 2014  - Jan 2015", "<strong>Bouygues Télécom</strong>Homepage integration for the new Bbox and special offers related to technical team. HTML5 & CSS3 integration, Sass and jQuery from Bouygues' specifications. Full autonomy on technical choices.") }}
+        {{ CVItem.getItem("Sep 2014", "<strong>Fédération Française de Tennis</strong>Static version of the new entry member. HTML5 & CSS3, Sass, jQuery. Full responsive integration. Using Grunt to automate tasks.") }}
+        {{ CVItem.getItem("Jul 2013 - Sep 2014", "<strong>Mégalo & Company</strong>Responsible for providing my expertise in the draft concept, I am also responsible for the integration of sites and emails various agency clients, full autonomy on technical choices for the different projects (Salomon Freeski, BMW & Vous, Foncia, Puiforcat, Leonard...)") }}
+        {{ CVItem.getItem("2009 à 2013", "<strong>NextInteractiveMedia</strong>Conversion trainership of one year to internship in technical team in charge of group' sites integration : 01Net, Télécharger.com, RMC, RMC Sport, RMC Découverte, BFM and BFM Business.") }}
+        {{ CVItem.getItem("2007 à 2009", "<strong>Fullsix</strong>Trainership of two years, rewarding and formative, both in terms of the skills of teamwork. Graphic design, Flash, Email creation and programing. Learning Photoshop, Flash (RIP), Illustrator, HTML and CSS") }}
+        <a href="/static/img/jvenerosy_cv_en.pdf" class="cv__download">
+            Download
+            <svg class="svg">
+                <use xlink:href="/static/img/svg.svg#file-pdf"></use>
+            </svg>
+        </a>
+    </div>
 
 {% endblock %}
