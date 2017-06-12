@@ -17,3 +17,5 @@
 *.css
 
 public/*
+
+*.DS_Store
