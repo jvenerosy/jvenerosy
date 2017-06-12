@@ -76,14 +76,14 @@
 
 .presentation__txt {
   @include breakpoint($b-xlarge) {
-    @include span(3 of 4);
+    @include span(3 of 5);
   }
 
   &--skill {
     @include fonts(12, 1.5);
 
     @include breakpoint($b-xlarge) {
-      @include span(1 of 4);
+      @include span(2 of 5);
       padding-left: 60px;
     }
 
